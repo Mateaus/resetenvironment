@@ -191,7 +191,7 @@ def resetKivyCache():
     
     if not EventLoop.event_listeners:
         from kivy.cache import Cache
-        window.Window = window.core_select_lib('window', window.window_impl, nocache = True)
+        window.Window = window.core_select_lib('window', window.window_impl, nocache = True) 
         for cat in Cache._categories:
             Cache._objects[cat] = {}
     
